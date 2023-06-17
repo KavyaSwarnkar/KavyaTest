@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bmi calculator</title>
+    <script src="app.js"></script>
+    <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(106, 176, 175);
+      }   
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(148,187,233,1);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <!-- Option for providing height 
+            and weight to the user-->
+        <p>Height (in cm)</p>
+
+        <input type="text" id="height">
+
+        <p>Weight (in kg)</p>
+
+        <input type="text" id="weight">
+
+        <button id="btn">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+    <img src="https://www.myheart.org.sg/wp-content/uploads/2022/03/BMI-Calculator.png" alt="bmi">
+</body>
+
+</html>
