@@ -1,0 +1,102 @@
+Q.1 Mention the working of Internet Website in Terms of Front-end & Back-end Divisions
+In the front end, users can interact with the web application through various icons and features. However, users cannot interact with the back end part because it does not provide visual aspects. Instead, it acts as the brain of the web application.It is done on the client-side of the application.Languages used includes HTML, CSS, and JavaScript.
+back-end development is done on the server-side. The server-side is connected to a database that responds to requests made on the client-side.There is no interaction with users. It uses programming languages such as Python, Ruby, PHP, and Java.
+The front-end and back-end divisions work together to create a fully functional website. The front-end handles the user interface and interaction, while the back-end manages the server-side operations, data storage, and processing. This division of labor allows for efficient development, maintenance, and scalability of websites and web applications.
+
+Q.2 What are tags in HTML? Explain the each category of tag with an Example.
+
+In HTML (Hypertext Markup Language), tags are used to structure and define the elements of a web page. Tags are enclosed within angle brackets (< and >) and come in pairs: an opening tag and a closing tag. The opening tag denotes the start of an element, while the closing tag indicates the end of the element. The content of the element is placed between these tags.
+Here are some categories of HTML tags along with examples:
+Headings Tags:
+<h1> to <h6>: These tags represent headings of different levels, where <h1> is the highest and <h6> is the lowest.
+Example:
+css
+Copy code
+<h1>This is the main heading</h1>
+<h2>This is a subheading</h2>
+Paragraph Tags:
+<p>: This tag is used to define a paragraph.
+Example:
+css
+Copy code
+<p>This is a paragraph of text.</p>
+Links Tags:
+<a>: This tag creates a hyperlink to another web page or resource.
+Example:
+php
+Copy code
+<a href="https://www.example.com">Visit Example.com</a>
+Image Tags:
+<img>: This tag inserts an image into the web page.
+Example:
+php
+Copy code
+<img src="image.jpg" alt="Description of the image">
+List Tags:
+<ul>: This tag creates an unordered (bulleted) list.
+<ol>: This tag creates an ordered (numbered) list.
+<li>: This tag represents each item in a list.
+Example:
+css
+Copy code
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+Division Tags:
+<div>: This tag defines a division or section of the web page.
+Example:
+css
+Copy code
+<div>
+  <p>This is some content inside a division.</p>
+</div>
+Form Tags:
+<form>: This tag is used to create a form for user input.
+<input>: This tag creates an input field within a form.
+Example:
+graphql
+Copy code
+<form>
+  <input type="text" name="username" placeholder="Enter your username">
+  <input type="submit" value="Submit">
+</form>
+
+Q.3 Explain the working Procedure of Virtual DOM.
+
+The Virtual DOM (VDOM) is a concept used in web development to improve performance and efficiency in updating user interfaces. It is an abstraction of the real DOM (the document object model) that exists in browsers. The Virtual DOM operates as an in-memory representation of the actual DOM, allowing developers to perform updates and modifications more efficiently.
+Here's a step-by-step explanation of how the Virtual DOM works:
+Initial render: When a web page is loaded or an application is started, the Virtual DOM is created and initialized with a representation of the current state of the user interface.
+Virtual DOM tree: The Virtual DOM creates a lightweight, tree-like structure that mirrors the structure of the actual DOM. Each element in the Virtual DOM tree corresponds to a corresponding element in the real DOM.
+Updating the Virtual DOM: When changes occur in the application's state or user interactions trigger updates, the Virtual DOM is updated to reflect these changes. However, instead of directly modifying the real DOM, the Virtual DOM is updated first.
+Diffing: After the Virtual DOM is updated, a process called "diffing" takes place. Diffing involves comparing the updated Virtual DOM with its previous state to identify the specific changes that have occurred.
+Minimal updates: The diffing algorithm determines the minimal set of updates needed to bring the real DOM in line with the updated Virtual DOM. This process significantly improves performance by avoiding unnecessary manipulations of the actual DOM.
+
+Q.4 Mention some Differences between MySQL and No SQL
+
+MySQL and NoSQL are both database management systems, but they differ in various aspects. Here are some key differences between MySQL, which is a relational database management system RDBMS and NoSQL databases:
+Data Model:
+MySQL: MySQL follows a structured and predefined schema based on tables, columns, and relationships. It uses a tabular format and enforces ACID (Atomicity, Consistency, Isolation, Durability) properties. It is a good fit for structured data with defined relationships.
+NoSQL: NoSQL databases provide a flexible data model that allows for unstructured, semi-structured, or structured data. NoSQL databases can be document-based, key-value, columnar, or graph-based. They offer schema flexibility and can handle large amounts of data with varying structures.
+Scalability:
+MySQL: MySQL databases typically scale vertically, meaning you can increase the server's capacity by adding more powerful hardware resources (CPU, memory, storage). It can also support some level of horizontal scalability through techniques like sharding or replication.
+NoSQL: NoSQL databases are designed for horizontal scalability, allowing you to distribute data across multiple servers. They employ distributed architectures and can scale out by adding more servers to handle increased data loads. This makes them suitable for handling big data and high-traffic applications.
+Query Language:
+MySQL: MySQL uses Structured Query Language (SQL) as its primary query language. SQL provides a standardized way to interact with relational databases and offers powerful querying capabilities, including complex joins, aggregations, and transactions.
+NoSQL: NoSQL databases often have their own query languages or APIs for data retrieval and manipulation. These query languages may be specific to the database type (e.g., MongoDB's query language) or use more general-purpose languages like JavaScript (e.g., CouchDB). NoSQL databases may have limited support for complex queries and transactions.
+Data Consistency:
+MySQL: MySQL ensures strong data consistency by enforcing ACID properties. Transactions in MySQL follow strict rules, and data modifications are typically atomic and isolated until committed or rolled back. This ensures that the database remains in a consistent state.
+NoSQL: NoSQL databases often prioritize other factors like high availability and partition tolerance over strict consistency. They adopt approaches like eventual consistency, where updates propagate asynchronously, and consistency is achieved over time. This trade-off allows for greater scalability but may lead to temporary inconsistencies in data across distributed systems.
+MySQL: MySQL is widely used for traditional business applications, content management systems, e-commerce platforms, and other applications that require structured data, complex queries, and ACID compliance.
+NoSQL: NoSQL databases are suitable for applications with large-scale data requirements, real-time analytics, content caching, session management, and situations where schema flexibility is crucial. They excel in handling unstructured or semi-structured data and are commonly used in big data, social media, IoT, and real-time applications.
+It's worth noting that these are general differences, and specific database systems within MySQL and NoSQL categories may have additional capabilities or characteristics that differentiate them further.
+
+Q.5 Explain any one DBMS Technology in your own words
+
+One popular DBMS technology is relational database management system (RDBMS). RDBMS is a software system that organizes and manages structured data based on the principles of the relational model. It provides a structured way to store, retrieve, and manipulate data stored in tables.
+In RDBMS, data is organized into tables, which consist of rows and columns. Each row represents a record or an instance of data, while each column represents a specific attribute or characteristic of the data. These tables are interconnected through relationships, which establish links between related data in different tables.
+RDBMS technology offers several key features. One of the main features is data integrity, which ensures that data is accurate and consistent. RDBMS enforces constraints and rules to prevent invalid data from being entered into the database. It also supports data normalization, which eliminates redundancy and improves data efficiency.
+Another important feature is the Structured Query Language (SQL), which is a standard language used to interact with RDBMS. SQL allows users to perform various operations on the database, such as querying data, inserting new records, updating existing data, and deleting unwanted data.
+RDBMS technology also provides transaction management capabilities, ensuring that multiple database operations are executed reliably and consistently. It supports the ACID properties (Atomicity, Consistency, Isolation, Durability) to maintain data integrity during concurrent transactions.
+Furthermore, RDBMS systems offer scalability and performance optimization. They can handle large volumes of data and accommodate growing user demands by optimizing query execution, indexing data, and implementing caching techniques.
+
